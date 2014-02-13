@@ -1,0 +1,10 @@
+
+<ul>
+	{{#each controller}}
+	<li>
+		{{name}}
+	</li>
+	{{/each}}
+</ul>
+
+{{view "select2" prompt="Search for a item" resource="items" displayKey="name" onSelect="setItem"}}
